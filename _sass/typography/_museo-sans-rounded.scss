@@ -1,0 +1,10 @@
+$path   : 'fonts/museo-sans-rounded';
+$family : 'MuseoSansRounded';
+$file   : 'museosansrounded';
+
+// Black
+@include font-setup(900, $family, $file, $path);
+// Regular
+@include font-setup(500, $family, $file, $path);
+// Extra thin
+@include font-setup(100, $family, $file, $path);

@@ -1,0 +1,17 @@
+
+@mixin font-setup(
+    $weight,
+    $family,
+    $file,
+    $path) {
+
+    @font-face {
+        font-family: $family;
+        font-weight: $weight;
+        font-style: normal;
+        src: url($path + '/#{$file}-#{$weight}.eot');
+        src: url($path + '/#{$file}-#{$weight}.eot?#iefix') format('embedded-opentype'),
+        url($path + '/#{$file}-#{$weight}.woff') format('woff'),
+        url($path + '/#{$file}-#{$weight}.ttf') format('truetype');
+    }
+}
