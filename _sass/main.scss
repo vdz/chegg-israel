@@ -1,0 +1,21 @@
+/*---
+# Only the main Sass file needs front matter (the dashes are enough)
+---*/
+@charset "utf-8";
+
+@import "compass/reset",
+    "compass/css3"
+;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "config",
+    "helpers/mixins",
+    "basic",
+    "helpers/helpers",
+    "grid",
+    "typography",
+    "layout/site",
+    "layout/header",
+    "layout/pages/intro",
+    "layout/pages/about"
+;

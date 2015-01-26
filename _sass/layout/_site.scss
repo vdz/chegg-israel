@@ -1,0 +1,12 @@
+.midsection {
+    display: block;
+    text-align: center;
+    font-weight: $f-regular;
+    color: $brand-color;
+    font-size: $base-font-size*1.75;
+}
+
+.info-block {
+    padding-top: $spacing-unit*2;
+    padding-bottom: $spacing-unit*2;
+}

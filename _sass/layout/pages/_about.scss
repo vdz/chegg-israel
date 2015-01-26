@@ -1,0 +1,47 @@
+$icon-size: 170px;
+
+.about {
+    .container {
+        position: relative;
+    }
+
+    .midsection {
+        margin-top: $spacing-unit*2;
+        padding-top: $icon-size + $spacing-unit;
+        padding-bottom: $spacing-unit*2;
+        background-position: top center;
+        background-repeat: no-repeat;
+
+        &.rocket {
+            background-image: url(../img/ui/spaceship.png);
+        }
+
+        &.flag {
+            background-image: url(../img/ui/banner.png);
+        }
+    }
+
+    .who-family {
+        background-image: url(../img/ui/gradient-1-bck.jpg);
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .info-block {
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+
+    .who, .family {
+        @include gridle(6);
+        color: #fff;
+    }
+
+    .who {
+        padding-right: $spacing-unit;
+    }
+    .family {
+        padding-left: $spacing-unit;
+    }
+}
