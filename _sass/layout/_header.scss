@@ -7,19 +7,23 @@ $logo-width     : 118px;
     color: $text-white;
     vertical-align: middle;
     position: relative;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
 
     .container {
         position: relative;
+
     }
 
     .site-title {
         @include gridle(6);
+        @include gridle(12, mobile);
         font-weight: $f-light;
         display: inline-block;
         font-size: $base-font-size*2;
         line-height: $bar-height;
         margin-left: $logo-width+10px;
-        text-indent: -104px;
+        text-indent: -7.5rem;
         overflow: hidden;
         color: inherit;
 
@@ -38,6 +42,7 @@ $logo-width     : 118px;
 
     .site-nav {
         @include gridle(6);
+        @include gridle(12, mobile);
     }
 }
 

@@ -1,10 +1,15 @@
 .intro {
+    @include bck-img('intro-bck-chegg-office.png');
     padding-top: $spacing-unit*2.5;
     padding-bottom: $spacing-unit*2.5;
-    background-image: url(../img/ui/intro-bck-chegg-office.png);
     background-repeat: no-repeat;
     background-position: center 15%;
     background-size: cover;
+
+    @include gridle_state(mobile) {
+        padding-top: $spacing-unit*1.5;
+        padding-bottom: $spacing-unit*1.5;
+    }
 
     .container {
         position: relative;
@@ -13,17 +18,31 @@
 
 .intro-title {
     @include gridle(7);
+    @include gridle(12, mobile);
     font-weight: $f-black;
     color: $text-white;
-    font-size: 90px;
+    font-size: $base-font-size*7;
     line-height: 1.3;
     text-transform: uppercase;
+
+    @include gridle_state(mobile) {
+        font-size: $base-font-size*3.5;
+    }
 }
 
 .intro-text {
     @include gridle(5);
+    @include gridle(12, mobile);
     @include vertical-align;
     color: $text-white;
     font-size: $base-font-size*1.5;
     vertical-align: middle;
+    
+    @include gridle_state(mobile) {
+        @include translateY(0%);
+        font-size: $base-font-size;
+        position: relative;
+        top: auto;
+    }
 }
+

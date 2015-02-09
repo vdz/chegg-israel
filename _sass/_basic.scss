@@ -3,6 +3,8 @@
  * Basic styling
  */
 body {
+    @include box-sizing(border-box);
+
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
@@ -19,10 +21,9 @@ body {
 p {
     padding: 0;
     line-height: $base-line-height;
-    margin-bottom: $base-font-size;
 }
 
-strong {
+strong, em {
     font-weight: $f-black;
 }
 
@@ -33,7 +34,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $base-font-size*1.5;
 }
 
 
@@ -101,7 +102,6 @@ a {
     }
 
     &:hover {
-        color: $text-color;
         text-decoration: underline;
     }
 }
@@ -112,12 +112,11 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    color: #fff;
+    font-size: $base-font-size*2.125;
     letter-spacing: -1px;
-    font-style: italic;
+    font-weight: $f-light;
+    line-height: 1.3;
 
     > :last-child {
         margin-bottom: 0;

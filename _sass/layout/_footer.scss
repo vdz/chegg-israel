@@ -1,0 +1,10 @@
+$bar-height     : 50px;
+
+.site-footer {
+    height: $bar-height;
+    background-color: $brand-darker-color;
+    border-top: solid $master-gutter lighten($brand-color, 10%);
+    color: $text-white;
+    vertical-align: middle;
+    position: relative;
+}

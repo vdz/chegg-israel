@@ -1,9 +1,9 @@
 
 // Our variables
 $base-font-family   : MuseoSansRounded, 'Helvetica Neue', Roboto, sans-serif;
-$base-font-size     : 16px;
+$base-font-size     : 1rem; //16px;
 $small-font-size    : $base-font-size * 0.875;
-$base-line-height   : 1.5;
+$base-line-height   : 1.55;
 
 $f-light            : 100;
 $f-regular          : 500;
@@ -15,6 +15,7 @@ $master-gutter      : 10px;
 $text-color         : #111;
 $background-color   : #faf1ef;
 $brand-color        : #ef7e09;
+$brand-darker-color : #e15f08;
 $text-white         : #faf1ef;
 
 $grey-color:       #828282;
@@ -26,3 +27,8 @@ $content-width:    960px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+
+// Images
+$ui-img-url         : '../img/ui';
+
+$info-block-height: 480px;

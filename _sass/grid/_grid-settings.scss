@@ -4,7 +4,7 @@
 // setup the grid (required) :
 @include gridle_setup((
 	context : 12,
-	gutter-width : 10px,
+	gutter-width : 40px,
 	debug : false
 ));
 
@@ -17,7 +17,16 @@
 
 // register states :
 @include gridle_register_default_states();
-@include gridle_register_state(ipad-landscape, (
-	query : "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)",
-	gutter-width : 0
+
+@include gridle_register_state(mobile , (
+		max-width : 400px,
+		gutter-width : 40px
 ));
+
+/*@include gridle_register_state(ipad-landscape, (
+	query : "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)",
+	gutter-width : 20px
+));*/
+
+//@include gridle_generate_custom_class( ( 'customize-for', '-', '%state' ) ) {
+//}

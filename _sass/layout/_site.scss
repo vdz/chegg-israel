@@ -1,12 +1,77 @@
+.half {
+    @include box-sizing(border-box);
+    display: table-cell;
+    width: 50%;
+}
+
 .midsection {
+    @include gridle(12);
+
+    $icon-size: 170px;
+
     display: block;
     text-align: center;
     font-weight: $f-regular;
     color: $brand-color;
     font-size: $base-font-size*1.75;
+    margin-top: $spacing-unit*3;
+    padding-top: $icon-size + $spacing-unit;
+    padding-bottom: $spacing-unit*2;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    @include gridle_state(mobile) {
+        font-size: $base-font-size*1.1;
+        text-align: left;
+    }
+
+    &.rocket {
+        @include bck-img('spaceship.png');
+    }
+
+    &.flag {
+        @include bck-img('banner.png');
+    }
+
+    &.box {
+        @include bck-img('box.png');
+    }
+
+    &.key {
+        @include bck-img('key.png');
+    }
+
+    &.chat {
+        @include bck-img('chat.png');
+    }
 }
 
 .info-block {
-    padding-top: $spacing-unit*2;
-    padding-bottom: $spacing-unit*2;
+    position: relative;
+
+    h3 {
+        text-transform: uppercase;
+    }
+}
+
+.author {
+    font-weight: $f-black;
+    display: block;
+}
+
+.position {
+    font-weight: $f-black;
+    color: #fff;
+}
+
+.big-n-flashy {
+    display: inline-block;
+    background-color: $brand-color;
+    padding-left: $spacing-unit/2;
+    padding-right: $spacing-unit/2;
+    font-size: $base-font-size*3;
+    line-height: $base-font-size*4;
+    font-weight: $f-black;
+    color: #fff;
+    text-transform: uppercase;
 }

@@ -16,3 +16,51 @@
     position: absolute;
     top: 50%;
 }
+
+@mixin info-layer-img {
+    position: relative;
+    min-height: $info-block-height;
+
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @include gridle_state(mobile) {
+        min-height: $info-block-height*2;
+
+        &:before, &:after {
+            min-height: $info-block-height;
+            width: 100%;
+        }
+
+        &:before {
+            bottom: auto;
+        }
+
+        &:after {
+            top: auto;
+        }
+    }
+
+}
+
+@mixin info-slot {
+    @include gridle(6);
+    @include gridle(12, mobile);
+    position: relative;
+    z-index: 2;
+    min-height: $info-block-height;
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+}
+
+@mixin bck-img($file-name) {
+    background-image: url(#{$ui-img-url}/#{$file-name});
+}

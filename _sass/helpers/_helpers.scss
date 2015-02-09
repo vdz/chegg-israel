@@ -3,3 +3,12 @@
     display: inline-block;
     width: 50%;
 }
+
+.elastic-embed {
+    position: relative;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
