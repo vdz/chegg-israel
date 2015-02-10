@@ -2,14 +2,15 @@
 title: Chegg Israel Office
 email: yehuda@chegg.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  We are on the mission to improve American students’ outcomes.
+  We’re going to make the world better to study in by building
+  products and services that help students save time,
+  save money and get smarter!
 
 # Build settings
 markdown: kramdown
 exclude: [config.rb]
 
 # Site Globals
-#baseurl: http://localhost:4000
-url: http://localhost:4000
+baseurl: http://www.chegg.co.il
+url: http://www.chegg.co.il

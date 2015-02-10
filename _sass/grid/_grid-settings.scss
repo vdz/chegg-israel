@@ -19,7 +19,7 @@
 @include gridle_register_default_states();
 
 @include gridle_register_state(mobile , (
-		max-width : 400px,
+		max-width : 650px,
 		gutter-width : 40px
 ));
 

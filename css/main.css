@@ -451,7 +451,7 @@ pre > code {
 }
 /* line 306, ../_sass/grid/gridle/_generate-mixins.scss */
 #gridle-settings {
-  content: '{ "version" : "1.3.35", "states" : { "retina":{ "query" : "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)", "classes" : false, "name" : "retina", "_gridle" : true }, "tv":{ "query" : "only tv", "classes" : false, "name" : "tv", "_gridle" : true }, "print":{ "query" : "only print", "classes" : false, "name" : "print", "_gridle" : true }, "portrait":{ "query" : "only screen and (orientation: portrait)", "classes" : false, "name" : "portrait", "_gridle" : true }, "landscape":{ "query" : "only screen and (orientation: landscape)", "classes" : false, "name" : "landscape", "_gridle" : true }, "default":{ "name" : "default", "min-width" : null, "max-width" : null, "query" : null, "classes" : true, "context" : "12", "gutter-width" : "40px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }, "mobile":{ "name" : "mobile", "min-width" : null, "max-width" : "400px", "query" : "screen and (max-width: 400px)", "classes" : true, "context" : "12", "gutter-width" : "40px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }, "tablet":{ "name" : "tablet", "min-width" : "481px", "max-width" : "1024px", "query" : "screen and (min-width: 481px) and (max-width: 1024px)", "classes" : true, "context" : "12", "gutter-width" : "40px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }} }';
+  content: '{ "version" : "1.3.35", "states" : { "retina":{ "query" : "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)", "classes" : false, "name" : "retina", "_gridle" : true }, "tv":{ "query" : "only tv", "classes" : false, "name" : "tv", "_gridle" : true }, "print":{ "query" : "only print", "classes" : false, "name" : "print", "_gridle" : true }, "portrait":{ "query" : "only screen and (orientation: portrait)", "classes" : false, "name" : "portrait", "_gridle" : true }, "landscape":{ "query" : "only screen and (orientation: landscape)", "classes" : false, "name" : "landscape", "_gridle" : true }, "default":{ "name" : "default", "min-width" : null, "max-width" : null, "query" : null, "classes" : true, "context" : "12", "gutter-width" : "40px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }, "mobile":{ "name" : "mobile", "min-width" : null, "max-width" : "650px", "query" : "screen and (max-width: 650px)", "classes" : true, "context" : "12", "gutter-width" : "40px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }, "tablet":{ "name" : "tablet", "min-width" : "481px", "max-width" : "1024px", "query" : "screen and (min-width: 481px) and (max-width: 1024px)", "classes" : true, "context" : "12", "gutter-width" : "40px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }} }';
 }
 
 /* line 502, ../_sass/grid/gridle/_generate-mixins.scss */
@@ -999,7 +999,7 @@ pre > code {
   clear: both;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 591, ../_sass/grid/gridle/_generate-mixins.scss */
   .grid-mobile-1on3 {
     width: 33.33333%;
@@ -2080,7 +2080,7 @@ pre > code {
   text-align: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 44, ../_sass/grid/gridle/_generate-mixins.scss */
   .center-mobile {
     text-align: center;
@@ -2146,7 +2146,7 @@ pre > code {
   background-position: top center;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 7, ../_sass/layout/_site.scss */
   .midsection {
     font-size: 1.1rem;
@@ -2232,19 +2232,20 @@ pre > code {
   font-weight: 100;
   display: inline-block;
   font-size: 2rem;
-  line-height: 100px;
-  margin-left: 128px;
-  text-indent: -7.5rem;
+  line-height: 103px;
   overflow: hidden;
   color: inherit;
+  white-space: nowrap;
+  text-indent: 3pt;
+  text-decoration: none;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 18, ../_sass/layout/_header.scss */
   .site-header .site-title {
     width: 100%;
   }
 }
-/* line 30, ../_sass/layout/_header.scss */
+/* line 31, ../_sass/layout/_header.scss */
 .site-header .site-title:before {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2257,11 +2258,13 @@ pre > code {
   width: 118px;
   margin-top: -2px;
   left: 0;
+  z-index: 2;
   background-image: url(../img/ui/logo.png);
   background-repeat: no-repeat;
   background-position: top left;
+  background-color: #ef7e09;
 }
-/* line 43, ../_sass/layout/_header.scss */
+/* line 46, ../_sass/layout/_header.scss */
 .site-header .site-nav {
   float: left;
   direction: ltr;
@@ -2269,8 +2272,8 @@ pre > code {
   padding-right: 20px;
   width: 50%;
 }
-@media screen and (max-width: 400px) {
-  /* line 43, ../_sass/layout/_header.scss */
+@media screen and (max-width: 650px) {
+  /* line 46, ../_sass/layout/_header.scss */
   .site-header .site-nav {
     width: 100%;
   }
@@ -2295,7 +2298,7 @@ pre > code {
   background-position: center 15%;
   background-size: cover;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 1, ../_sass/layout/pages/_intro.scss */
   .intro {
     padding-top: 45px;
@@ -2316,17 +2319,17 @@ pre > code {
   width: 58.33333%;
   font-weight: 900;
   color: #faf1ef;
-  font-size: 7rem;
+  font-size: 4.5rem;
   line-height: 1.3;
   text-transform: uppercase;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 19, ../_sass/layout/pages/_intro.scss */
   .intro-title {
     width: 100%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 19, ../_sass/layout/pages/_intro.scss */
   .intro-title {
     font-size: 3.5rem;
@@ -2350,13 +2353,13 @@ pre > code {
   font-size: 1.5rem;
   vertical-align: middle;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 33, ../_sass/layout/pages/_intro.scss */
   .intro-text {
     width: 100%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 33, ../_sass/layout/pages/_intro.scss */
   .intro-text {
     -moz-transform: translateY(0%);
@@ -2395,7 +2398,7 @@ pre > code {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 12, ../_sass/layout/pages/_about.scss */
   .about .bosses, .about .culture, .about .looking-for {
     min-height: 960px;
@@ -2453,10 +2456,6 @@ pre > code {
   background-position: center;
 }
 /* line 61, ../_sass/layout/pages/_about.scss */
-.about .who, .about .family {
-  color: #fff;
-}
-/* line 66, ../_sass/layout/pages/_about.scss */
 .about .who, .about .family, .about .shahaf, .about .aviel, .about .arieh, .about .rodik, .about .kids, .about .our-culture {
   float: left;
   direction: ltr;
@@ -2469,13 +2468,18 @@ pre > code {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 400px) {
-  /* line 66, ../_sass/layout/pages/_about.scss */
+@media screen and (max-width: 650px) {
+  /* line 61, ../_sass/layout/pages/_about.scss */
   .about .who, .about .family, .about .shahaf, .about .aviel, .about .arieh, .about .rodik, .about .kids, .about .our-culture {
     width: 100%;
   }
 }
-/* line 70, ../_sass/layout/pages/_about.scss */
+/* line 65, ../_sass/layout/pages/_about.scss */
+.about .who, .about .family {
+  min-height: 0;
+  color: #fff;
+}
+/* line 71, ../_sass/layout/pages/_about.scss */
 .about .shahaf {
   float: left;
   direction: ltr;
@@ -2484,19 +2488,19 @@ pre > code {
   width: 33.33333%;
   margin-right: 16.66667%;
 }
-@media screen and (max-width: 400px) {
-  /* line 70, ../_sass/layout/pages/_about.scss */
+@media screen and (max-width: 650px) {
+  /* line 71, ../_sass/layout/pages/_about.scss */
   .about .shahaf {
     width: 100%;
   }
 }
-@media screen and (max-width: 400px) {
-  /* line 70, ../_sass/layout/pages/_about.scss */
+@media screen and (max-width: 650px) {
+  /* line 71, ../_sass/layout/pages/_about.scss */
   .about .shahaf {
     margin-right: 0%;
   }
 }
-/* line 77, ../_sass/layout/pages/_about.scss */
+/* line 78, ../_sass/layout/pages/_about.scss */
 .about .aviel {
   float: left;
   direction: ltr;
@@ -2505,19 +2509,19 @@ pre > code {
   width: 41.66667%;
   margin-right: 8.33333%;
 }
-@media screen and (max-width: 400px) {
-  /* line 77, ../_sass/layout/pages/_about.scss */
+@media screen and (max-width: 650px) {
+  /* line 78, ../_sass/layout/pages/_about.scss */
   .about .aviel {
     width: 100%;
   }
 }
-@media screen and (max-width: 400px) {
-  /* line 77, ../_sass/layout/pages/_about.scss */
+@media screen and (max-width: 650px) {
+  /* line 78, ../_sass/layout/pages/_about.scss */
   .about .aviel {
     margin-right: 0%;
   }
 }
-/* line 85, ../_sass/layout/pages/_about.scss */
+/* line 86, ../_sass/layout/pages/_about.scss */
 .about .arieh {
   float: left;
   direction: ltr;
@@ -2526,19 +2530,19 @@ pre > code {
   width: 33.33333%;
   margin-left: 16.66667%;
 }
-@media screen and (max-width: 400px) {
-  /* line 85, ../_sass/layout/pages/_about.scss */
+@media screen and (max-width: 650px) {
+  /* line 86, ../_sass/layout/pages/_about.scss */
   .about .arieh {
     width: 100%;
   }
 }
-@media screen and (max-width: 400px) {
-  /* line 85, ../_sass/layout/pages/_about.scss */
+@media screen and (max-width: 650px) {
+  /* line 86, ../_sass/layout/pages/_about.scss */
   .about .arieh {
     margin-left: 0%;
   }
 }
-/* line 92, ../_sass/layout/pages/_about.scss */
+/* line 93, ../_sass/layout/pages/_about.scss */
 .about .kids {
   float: left;
   direction: ltr;
@@ -2547,26 +2551,26 @@ pre > code {
   width: 33.33333%;
   padding-top: 60px;
 }
-@media screen and (max-width: 400px) {
-  /* line 92, ../_sass/layout/pages/_about.scss */
+@media screen and (max-width: 650px) {
+  /* line 93, ../_sass/layout/pages/_about.scss */
   .about .kids {
     width: 100%;
   }
 }
-/* line 98, ../_sass/layout/pages/_about.scss */
+/* line 99, ../_sass/layout/pages/_about.scss */
 .about .rodik {
   float: left;
   direction: ltr;
   padding-left: 20px;
   padding-right: 20px;
 }
-@media screen and (max-width: 400px) {
-  /* line 98, ../_sass/layout/pages/_about.scss */
+@media screen and (max-width: 650px) {
+  /* line 99, ../_sass/layout/pages/_about.scss */
   .about .rodik {
     width: 100%;
   }
 }
-/* line 101, ../_sass/layout/pages/_about.scss */
+/* line 102, ../_sass/layout/pages/_about.scss */
 .about .rodik .big-n-flashy {
   margin-top: 370px;
 }
@@ -2585,13 +2589,13 @@ pre > code {
   padding-bottom: 30px;
   width: 50%;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 3, ../_sass/layout/pages/_contact.scss */
   .contact .address, .contact .facebook {
     width: 100%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   /* line 3, ../_sass/layout/pages/_contact.scss */
   .contact .address, .contact .facebook {
     width: 100%;
@@ -2600,7 +2604,7 @@ pre > code {
 /* line 9, ../_sass/layout/pages/_contact.scss */
 .contact .map-embed, .contact .facebook-embed {
   width: 100%;
-  height: 300px;
+  height: 360px;
 }
 /* line 14, ../_sass/layout/pages/_contact.scss */
 .contact .facebook-embed {

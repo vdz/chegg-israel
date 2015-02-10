@@ -58,13 +58,14 @@
         }
     }
 
-    .who, .family
-    {
-        color: #fff;
-    }
-
     .who, .family, .shahaf, .aviel, .arieh, .rodik, .kids, .our-culture, {
         @include info-slot;
+    }
+
+    .who, .family
+    {
+        min-height: 0;
+        color: #fff;
     }
 
     .shahaf {

@@ -21,11 +21,12 @@ $logo-width     : 118px;
         font-weight: $f-light;
         display: inline-block;
         font-size: $base-font-size*2;
-        line-height: $bar-height;
-        margin-left: $logo-width+10px;
-        text-indent: -7.5rem;
+        line-height: $bar-height + 3px;
         overflow: hidden;
         color: inherit;
+        white-space: nowrap;
+        text-indent: 3pt;
+        text-decoration: none;
 
         &:before {
             @include vertical-align;
@@ -34,9 +35,11 @@ $logo-width     : 118px;
             width: $logo-width;
             margin-top: -2px;
             left: 0;
+            z-index: 2;
             background-image: url(../img/ui/logo.png);
             background-repeat: no-repeat;
             background-position: top left;
+            background-color: $brand-color;
         }
     }
 
